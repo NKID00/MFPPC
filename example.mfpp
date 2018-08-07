@@ -1,0 +1,14 @@
+:start
+if entity @s[type=minecraft:bat]:
+    while entity @a[r=1]:
+        setblock ~ ~ ~  air
+    goto start
+fill ~ ~ ~ ~2 ~2 ~2 stone
+goto end
+
+:_exp_ex
+function exp:exp
+goto end
+
+:end
+function exp:end
